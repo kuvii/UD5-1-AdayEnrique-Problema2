@@ -1,7 +1,7 @@
 package Utils;
 
 public class Stack {
-    private static final int CAPACIDAD_INICIAL = 5;
+    private static final int CAPACIDAD_INICIAL = 2;
 
     private CustomCollection collection = new CustomCollection(CAPACIDAD_INICIAL);
 
@@ -9,7 +9,7 @@ public class Stack {
         collection.insert(element, 0);
     }
 
-    public void pop() {
-        collection.delete(0);
+    public int pop() {
+        return (int) collection.delete(0);
     }
 }
